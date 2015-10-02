@@ -1,0 +1,83 @@
+# depslib dependency file v1.0
+1236081600 source:/Users/alberto/Universidad/IA/Practica 1/Agent-GUI-R3a/random_num_gen.cpp
+	<iostream>
+	<stdlib.h>
+	"random_num_gen.h"
+	"evaluator.h"
+	"environment.h"
+
+1235575988 /Users/alberto/Universidad/IA/Practica 1/Agent-GUI-R3a/random_num_gen.h
+	<vector>
+
+1237283772 /Users/alberto/Universidad/IA/Practica 1/Agent-GUI-R3a/evaluator.h
+	"agent.h"
+
+1235577000 /Users/alberto/Universidad/IA/Practica 1/Agent-GUI-R3a/agent.h
+	<string>
+
+1237149340 /Users/alberto/Universidad/IA/Practica 1/Agent-GUI-R3a/environment.h
+	<fstream>
+	"agent.h"
+
+1239980788 source:/Users/alberto/Universidad/IA/Practica 1/Agent-GUI-R3a/environment.cpp
+	<iostream>
+	<iomanip>
+	<string>
+	"stdlib.h"
+	"environment.h"
+	"random_num_gen.h"
+	"include/GL/glui.h"
+
+1208858522 /Users/alberto/Universidad/IA/Practica 1/Agent-GUI-R3a/include/GL/glui.h
+	"openglut.h"
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	<string>
+	<vector>
+
+1207922190 /Users/alberto/Universidad/IA/Practica 1/Agent-GUI-R3a/include/GL/openglut.h
+	"openglut_std.h"
+	"openglut_ext.h"
+
+1208460342 /Users/alberto/Universidad/IA/Practica 1/Agent-GUI-R3a/include/GL/openglut_std.h
+	<windows.h>
+	"gl.h"
+	"glu.h"
+
+1107063320 /Users/alberto/Universidad/IA/Practica 1/Agent-GUI-R3a/include/GL/gl.h
+
+1208460414 /Users/alberto/Universidad/IA/Practica 1/Agent-GUI-R3a/include/GL/glu.h
+	<stddef.h>
+	"gl.h"
+
+1207922190 /Users/alberto/Universidad/IA/Practica 1/Agent-GUI-R3a/include/GL/openglut_ext.h
+
+1238541404 source:/Users/alberto/Universidad/IA/Practica 1/Agent-GUI-R3a/evaluator.cpp
+	"evaluator.h"
+	"environment.h"
+
+1236164460 source:/Users/alberto/Universidad/IA/Practica 1/Agent-GUI-R3a/main.cpp
+	"GUI.h"
+
+1238541398 /Users/alberto/Universidad/IA/Practica 1/Agent-GUI-R3a/GUI.h
+	<fstream>
+	"include/GL/glui.h"
+
+1331631324 source:/Users/alberto/Universidad/IA/Practica 1/Agent-GUI-R3a/agent.cpp
+	"agent.h"
+	"environment.h"
+	<cstdlib>
+
+1331631780 source:/Users/alberto/Universidad/IA/Practica 1/Agent-GUI-R3a/GUI.cpp
+	<fstream>
+	<sstream>
+	<iomanip>
+	<iostream>
+	"GUI.h"
+	<stdlib.h>
+	"random_num_gen.h"
+	"environment.h"
+	"agent.h"
+	"evaluator.h"
+

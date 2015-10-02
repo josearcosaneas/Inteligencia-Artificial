@@ -1,0 +1,728 @@
+# depslib dependency file v1.0
+1364603282 source:c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\gui.cpp
+	<fstream>
+	<sstream>
+	<iomanip>
+	<iostream>
+	<windows.h>
+	"GUI.h"
+	<stdlib.h>
+	"environment.h"
+	"agent.h"
+	"evaluator.h"
+	"Plan.h"
+
+1364588444 c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\gui.h
+	<fstream>
+	"include/GL/glui.h"
+
+1208862122 c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\include\gl\glui.h
+	"openglut.h"
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	<string>
+	<vector>
+
+1207925790 c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\include\gl\openglut.h
+	"openglut_std.h"
+	"openglut_ext.h"
+
+1208463942 c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\include\gl\openglut_std.h
+	<windows.h>
+	"gl.h"
+	"glu.h"
+
+1107066920 c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\include\gl\gl.h
+
+1208464014 c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\include\gl\glu.h
+	<stddef.h>
+	"gl.h"
+
+1207925790 c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\include\gl\openglut_ext.h
+
+1363596352 c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\environment.h
+	<fstream>
+
+1364742067 c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\agent.h
+	<string>
+	"environment.h"
+	"state.h"
+	"plan.h"
+
+1364603675 c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\state.h
+	"environment.h"
+	<list>
+
+1331749964 c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\plan.h
+	<list>
+
+1330955700 c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\evaluator.h
+	"agent.h"
+
+1364391899 source:c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\plan.cpp
+	"Plan.h"
+	<list>
+	<iostream>
+
+1363607634 source:c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\environment.cpp
+	<iostream>
+	<iomanip>
+	<string>
+	"stdlib.h"
+	"environment.h"
+	"include/GL/glui.h"
+
+1364605570 source:c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\evaluator.cpp
+	"evaluator.h"
+	"environment.h"
+
+1152204176 source:c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\include\glui.cpp
+	"glui_internal_control.h"
+
+1152204812 c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\include\glui_internal_control.h
+	"GL/glui.h"
+	"glui_internal.h"
+
+1120532240 c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\include\glui_internal.h
+	<cstdio>
+	<cmath>
+
+1152204176 source:c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\include\glui_bitmap_img_data.cpp
+
+1152204176 source:c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\include\glui_bitmaps.cpp
+	"GL/glui.h"
+	"glui_internal.h"
+	<cassert>
+
+1152204176 source:c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\include\glui_button.cpp
+	"glui_internal_control.h"
+
+1152204176 source:c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\include\glui_column.cpp
+	"glui_internal_control.h"
+
+1152204176 source:c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\include\glui_control.cpp
+	"glui_internal_control.h"
+
+1152204176 source:c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\include\glui_edittext.cpp
+	"glui_internal_control.h"
+	<cassert>
+
+1240417432 source:c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\include\glui_filebrowser.cpp
+	"GL/glui.h"
+	"glui_internal.h"
+	<sys/types.h>
+	<dirent.h>
+	<unistd.h>
+	<windows.h>
+	<sys/stat.h>
+	<iostream>
+
+1152204176 source:c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\include\glui_list.cpp
+	"glui_internal_control.h"
+	<cmath>
+	<sys/timeb.h>
+
+1120538608 source:c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\include\glui_node.cpp
+	"GL/glui.h"
+	"glui_internal.h"
+
+1208460170 source:c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\include\glui_panel.cpp
+	"glui_internal_control.h"
+
+1152204176 source:c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\include\glui_radio.cpp
+	"glui_internal_control.h"
+	<cassert>
+
+1152204176 source:c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\include\glui_rollout.cpp
+	"glui_internal_control.h"
+
+1152204176 source:c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\include\glui_scrollbar.cpp
+	"glui_internal_control.h"
+	<cmath>
+	<cassert>
+
+1152204176 source:c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\include\glui_spinner.cpp
+	"glui_internal_control.h"
+	<cmath>
+	<cassert>
+
+1152204176 source:c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\include\glui_statictext.cpp
+	"glui_internal_control.h"
+
+1120538608 source:c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\include\glui_string.cpp
+	"GL/glui.h"
+	<stdarg.h>
+
+1120538608 source:c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\include\glui_window.cpp
+	"GL/glui.h"
+	"glui_internal.h"
+
+1236168060 source:c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\main.cpp
+	"GUI.h"
+
+1364605552 source:c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\state.cpp
+	<iostream>
+	"state.h"
+	"environment.h"
+	<list>
+	<queue>
+	<cmath>
+	<iostream>
+
+1364738558 source:c:\users\fgr\documents\ia2012_13\practica2\versionalumnos\agent.cpp
+	"agent.h"
+	"environment.h"
+	"state.h"
+	<cstdlib>
+	<iostream>
+	<list>
+	<queue>
+	<stack>
+
+1364603284 source:c:\users\joseaa\desktop\ia-p2\practica2\gui.cpp
+	<fstream>
+	<sstream>
+	<iomanip>
+	<iostream>
+	<windows.h>
+	"GUI.h"
+	<stdlib.h>
+	"environment.h"
+	"agent.h"
+	"evaluator.h"
+	"Plan.h"
+
+1364588446 c:\users\joseaa\desktop\ia-p2\practica2\gui.h
+	<fstream>
+	"include/GL/glui.h"
+
+1208862122 c:\users\joseaa\desktop\ia-p2\practica2\include\gl\glui.h
+	"openglut.h"
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	<string>
+	<vector>
+
+1207925790 c:\users\joseaa\desktop\ia-p2\practica2\include\gl\openglut.h
+	"openglut_std.h"
+	"openglut_ext.h"
+
+1208463942 c:\users\joseaa\desktop\ia-p2\practica2\include\gl\openglut_std.h
+	<windows.h>
+	"gl.h"
+	"glu.h"
+
+1107066920 c:\users\joseaa\desktop\ia-p2\practica2\include\gl\gl.h
+
+1208464014 c:\users\joseaa\desktop\ia-p2\practica2\include\gl\glu.h
+	<stddef.h>
+	"gl.h"
+
+1207925790 c:\users\joseaa\desktop\ia-p2\practica2\include\gl\openglut_ext.h
+
+1363596352 c:\users\joseaa\desktop\ia-p2\practica2\environment.h
+	<fstream>
+
+1368298625 c:\users\joseaa\desktop\ia-p2\practica2\agent.h
+	<string>
+	"environment.h"
+	"state.h"
+	"plan.h"
+
+1368298201 c:\users\joseaa\desktop\ia-p2\practica2\state.h
+	"environment.h"
+	<list>
+
+1331749964 c:\users\joseaa\desktop\ia-p2\practica2\plan.h
+	<list>
+
+1330955700 c:\users\joseaa\desktop\ia-p2\practica2\evaluator.h
+	"agent.h"
+
+1366616530 source:c:\users\joseaa\desktop\ia-p2\practica2\plan.cpp
+	"Plan.h"
+	<list>
+	<iostream>
+
+1363607634 source:c:\users\joseaa\desktop\ia-p2\practica2\environment.cpp
+	<iostream>
+	<iomanip>
+	<string>
+	"stdlib.h"
+	"environment.h"
+	"include/GL/glui.h"
+
+1364605572 source:c:\users\joseaa\desktop\ia-p2\practica2\evaluator.cpp
+	"evaluator.h"
+	"environment.h"
+
+1152204176 source:c:\users\joseaa\desktop\ia-p2\practica2\include\glui.cpp
+	"glui_internal_control.h"
+
+1152204812 c:\users\joseaa\desktop\ia-p2\practica2\include\glui_internal_control.h
+	"GL/glui.h"
+	"glui_internal.h"
+
+1120532240 c:\users\joseaa\desktop\ia-p2\practica2\include\glui_internal.h
+	<cstdio>
+	<cmath>
+
+1152204176 source:c:\users\joseaa\desktop\ia-p2\practica2\include\glui_bitmap_img_data.cpp
+
+1152204176 source:c:\users\joseaa\desktop\ia-p2\practica2\include\glui_bitmaps.cpp
+	"GL/glui.h"
+	"glui_internal.h"
+	<cassert>
+
+1152204176 source:c:\users\joseaa\desktop\ia-p2\practica2\include\glui_button.cpp
+	"glui_internal_control.h"
+
+1152204176 source:c:\users\joseaa\desktop\ia-p2\practica2\include\glui_column.cpp
+	"glui_internal_control.h"
+
+1152204176 source:c:\users\joseaa\desktop\ia-p2\practica2\include\glui_control.cpp
+	"glui_internal_control.h"
+
+1152204176 source:c:\users\joseaa\desktop\ia-p2\practica2\include\glui_edittext.cpp
+	"glui_internal_control.h"
+	<cassert>
+
+1240417432 source:c:\users\joseaa\desktop\ia-p2\practica2\include\glui_filebrowser.cpp
+	"GL/glui.h"
+	"glui_internal.h"
+	<sys/types.h>
+	<dirent.h>
+	<unistd.h>
+	<windows.h>
+	<sys/stat.h>
+	<iostream>
+
+1152204176 source:c:\users\joseaa\desktop\ia-p2\practica2\include\glui_list.cpp
+	"glui_internal_control.h"
+	<cmath>
+	<sys/timeb.h>
+
+1120538608 source:c:\users\joseaa\desktop\ia-p2\practica2\include\glui_node.cpp
+	"GL/glui.h"
+	"glui_internal.h"
+
+1208460170 source:c:\users\joseaa\desktop\ia-p2\practica2\include\glui_panel.cpp
+	"glui_internal_control.h"
+
+1152204176 source:c:\users\joseaa\desktop\ia-p2\practica2\include\glui_radio.cpp
+	"glui_internal_control.h"
+	<cassert>
+
+1152204176 source:c:\users\joseaa\desktop\ia-p2\practica2\include\glui_rollout.cpp
+	"glui_internal_control.h"
+
+1152204176 source:c:\users\joseaa\desktop\ia-p2\practica2\include\glui_scrollbar.cpp
+	"glui_internal_control.h"
+	<cmath>
+	<cassert>
+
+1152204176 source:c:\users\joseaa\desktop\ia-p2\practica2\include\glui_spinner.cpp
+	"glui_internal_control.h"
+	<cmath>
+	<cassert>
+
+1152204176 source:c:\users\joseaa\desktop\ia-p2\practica2\include\glui_statictext.cpp
+	"glui_internal_control.h"
+
+1120538608 source:c:\users\joseaa\desktop\ia-p2\practica2\include\glui_string.cpp
+	"GL/glui.h"
+	<stdarg.h>
+
+1120538608 source:c:\users\joseaa\desktop\ia-p2\practica2\include\glui_window.cpp
+	"GL/glui.h"
+	"glui_internal.h"
+
+1236168060 source:c:\users\joseaa\desktop\ia-p2\practica2\main.cpp
+	"GUI.h"
+
+1366616506 source:c:\users\joseaa\desktop\ia-p2\practica2\state.cpp
+	<iostream>
+	"state.h"
+	"environment.h"
+	<list>
+	<queue>
+	<cmath>
+	<iostream>
+
+1368299667 source:c:\users\joseaa\desktop\ia-p2\practica2\agent.cpp
+	"agent.h"
+	"environment.h"
+	"state.h"
+	<cstdlib>
+	<iostream>
+	<list>
+	<queue>
+	<stack>
+	<cmath>
+
+1364603284 source:c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\gui.cpp
+	<fstream>
+	<sstream>
+	<iomanip>
+	<iostream>
+	<windows.h>
+	"GUI.h"
+	<stdlib.h>
+	"environment.h"
+	"agent.h"
+	"evaluator.h"
+	"Plan.h"
+
+1364588446 c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\gui.h
+	<fstream>
+	"include/GL/glui.h"
+
+1208862122 c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\include\gl\glui.h
+	"openglut.h"
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	<string>
+	<vector>
+
+1207925790 c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\include\gl\openglut.h
+	"openglut_std.h"
+	"openglut_ext.h"
+
+1208463942 c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\include\gl\openglut_std.h
+	<windows.h>
+	"gl.h"
+	"glu.h"
+
+1107066920 c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\include\gl\gl.h
+
+1208464014 c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\include\gl\glu.h
+	<stddef.h>
+	"gl.h"
+
+1207925790 c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\include\gl\openglut_ext.h
+
+1363596352 c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\environment.h
+	<fstream>
+
+1368386044 c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\agent.h
+	<string>
+	"environment.h"
+	"state.h"
+	"plan.h"
+
+1368298201 c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\state.h
+	"environment.h"
+	<list>
+
+1331749964 c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\plan.h
+	<list>
+
+1330955700 c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\evaluator.h
+	"agent.h"
+
+1366616530 source:c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\plan.cpp
+	"Plan.h"
+	<list>
+	<iostream>
+
+1363607634 source:c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\environment.cpp
+	<iostream>
+	<iomanip>
+	<string>
+	"stdlib.h"
+	"environment.h"
+	"include/GL/glui.h"
+
+1364605572 source:c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\evaluator.cpp
+	"evaluator.h"
+	"environment.h"
+
+1152204176 source:c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\include\glui.cpp
+	"glui_internal_control.h"
+
+1152204812 c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\include\glui_internal_control.h
+	"GL/glui.h"
+	"glui_internal.h"
+
+1120532240 c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\include\glui_internal.h
+	<cstdio>
+	<cmath>
+
+1152204176 source:c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\include\glui_bitmap_img_data.cpp
+
+1152204176 source:c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\include\glui_bitmaps.cpp
+	"GL/glui.h"
+	"glui_internal.h"
+	<cassert>
+
+1152204176 source:c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\include\glui_button.cpp
+	"glui_internal_control.h"
+
+1152204176 source:c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\include\glui_column.cpp
+	"glui_internal_control.h"
+
+1152204176 source:c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\include\glui_control.cpp
+	"glui_internal_control.h"
+
+1152204176 source:c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\include\glui_edittext.cpp
+	"glui_internal_control.h"
+	<cassert>
+
+1240417432 source:c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\include\glui_filebrowser.cpp
+	"GL/glui.h"
+	"glui_internal.h"
+	<sys/types.h>
+	<dirent.h>
+	<unistd.h>
+	<windows.h>
+	<sys/stat.h>
+	<iostream>
+
+1152204176 source:c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\include\glui_list.cpp
+	"glui_internal_control.h"
+	<cmath>
+	<sys/timeb.h>
+
+1120538608 source:c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\include\glui_node.cpp
+	"GL/glui.h"
+	"glui_internal.h"
+
+1208460170 source:c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\include\glui_panel.cpp
+	"glui_internal_control.h"
+
+1152204176 source:c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\include\glui_radio.cpp
+	"glui_internal_control.h"
+	<cassert>
+
+1152204176 source:c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\include\glui_rollout.cpp
+	"glui_internal_control.h"
+
+1152204176 source:c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\include\glui_scrollbar.cpp
+	"glui_internal_control.h"
+	<cmath>
+	<cassert>
+
+1152204176 source:c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\include\glui_spinner.cpp
+	"glui_internal_control.h"
+	<cmath>
+	<cassert>
+
+1152204176 source:c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\include\glui_statictext.cpp
+	"glui_internal_control.h"
+
+1120538608 source:c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\include\glui_string.cpp
+	"GL/glui.h"
+	<stdarg.h>
+
+1120538608 source:c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\include\glui_window.cpp
+	"GL/glui.h"
+	"glui_internal.h"
+
+1236168060 source:c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\main.cpp
+	"GUI.h"
+
+1366616506 source:c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\state.cpp
+	<iostream>
+	"state.h"
+	"environment.h"
+	<list>
+	<queue>
+	<cmath>
+	<iostream>
+
+1368385587 source:c:\users\joseaa\desktop\ia-p2\ia-p2\practica2\agent.cpp
+	"agent.h"
+	"environment.h"
+	"state.h"
+	<cstdlib>
+	<iostream>
+	<list>
+	<queue>
+	<stack>
+	<cmath>
+
+1363611234 source:i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\environment.cpp
+	<iostream>
+	<iomanip>
+	<string>
+	"stdlib.h"
+	"environment.h"
+	"include/GL/glui.h"
+
+1363599952 i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\environment.h
+	<fstream>
+
+1208862122 i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\include\gl\glui.h
+	"openglut.h"
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	<string>
+	<vector>
+
+1207925790 i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\include\gl\openglut.h
+	"openglut_std.h"
+	"openglut_ext.h"
+
+1208463942 i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\include\gl\openglut_std.h
+	<windows.h>
+	"gl.h"
+	"glu.h"
+
+1107070520 i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\include\gl\gl.h
+
+1208464014 i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\include\gl\glu.h
+	<stddef.h>
+	"gl.h"
+
+1207925790 i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\include\gl\openglut_ext.h
+
+1364609172 source:i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\evaluator.cpp
+	"evaluator.h"
+	"environment.h"
+
+1330959300 i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\evaluator.h
+	"agent.h"
+
+1368386044 i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\agent.h
+	<string>
+	"environment.h"
+	"state.h"
+	"plan.h"
+
+1368298201 i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\state.h
+	"environment.h"
+	<list>
+
+1331753564 i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\plan.h
+	<list>
+
+1364606884 source:i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\gui.cpp
+	<fstream>
+	<sstream>
+	<iomanip>
+	<iostream>
+	<windows.h>
+	"GUI.h"
+	<stdlib.h>
+	"environment.h"
+	"agent.h"
+	"evaluator.h"
+	"Plan.h"
+
+1364592046 i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\gui.h
+	<fstream>
+	"include/GL/glui.h"
+
+1152204176 source:i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\include\glui.cpp
+	"glui_internal_control.h"
+
+1152204812 i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\include\glui_internal_control.h
+	"GL/glui.h"
+	"glui_internal.h"
+
+1120532240 i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\include\glui_internal.h
+	<cstdio>
+	<cmath>
+
+1152204176 source:i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\include\glui_bitmap_img_data.cpp
+
+1152204176 source:i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\include\glui_bitmaps.cpp
+	"GL/glui.h"
+	"glui_internal.h"
+	<cassert>
+
+1152204176 source:i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\include\glui_button.cpp
+	"glui_internal_control.h"
+
+1152204176 source:i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\include\glui_column.cpp
+	"glui_internal_control.h"
+
+1152204176 source:i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\include\glui_control.cpp
+	"glui_internal_control.h"
+
+1152204176 source:i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\include\glui_edittext.cpp
+	"glui_internal_control.h"
+	<cassert>
+
+1240417432 source:i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\include\glui_filebrowser.cpp
+	"GL/glui.h"
+	"glui_internal.h"
+	<sys/types.h>
+	<dirent.h>
+	<unistd.h>
+	<windows.h>
+	<sys/stat.h>
+	<iostream>
+
+1152204176 source:i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\include\glui_list.cpp
+	"glui_internal_control.h"
+	<cmath>
+	<sys/timeb.h>
+
+1120538608 source:i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\include\glui_node.cpp
+	"GL/glui.h"
+	"glui_internal.h"
+
+1208460170 source:i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\include\glui_panel.cpp
+	"glui_internal_control.h"
+
+1152204176 source:i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\include\glui_radio.cpp
+	"glui_internal_control.h"
+	<cassert>
+
+1152204176 source:i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\include\glui_rollout.cpp
+	"glui_internal_control.h"
+
+1152204176 source:i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\include\glui_scrollbar.cpp
+	"glui_internal_control.h"
+	<cmath>
+	<cassert>
+
+1152204176 source:i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\include\glui_spinner.cpp
+	"glui_internal_control.h"
+	<cmath>
+	<cassert>
+
+1152204176 source:i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\include\glui_statictext.cpp
+	"glui_internal_control.h"
+
+1120538608 source:i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\include\glui_string.cpp
+	"GL/glui.h"
+	<stdarg.h>
+
+1120538608 source:i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\include\glui_window.cpp
+	"GL/glui.h"
+	"glui_internal.h"
+
+1236171660 source:i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\main.cpp
+	"GUI.h"
+
+1366616530 source:i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\plan.cpp
+	"Plan.h"
+	<list>
+	<iostream>
+
+1366616506 source:i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\state.cpp
+	<iostream>
+	"state.h"
+	"environment.h"
+	<list>
+	<queue>
+	<cmath>
+	<iostream>
+
+1368387136 source:i:\facultad\futuro\ia\ia\practica2\ia-p2\practica2\agent.cpp
+	"agent.h"
+	"environment.h"
+	"state.h"
+	<cstdlib>
+	<iostream>
+	<list>
+	<queue>
+	<stack>
+	<cmath>
+

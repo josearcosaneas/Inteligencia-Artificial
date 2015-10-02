@@ -1,0 +1,299 @@
+# depslib dependency file v1.0
+1335334350 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\aspiradoras\aspiradoras\agent.cpp
+	"agent.h"
+	"environment.h"
+	<cstdlib>
+
+1335287022 c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\aspiradoras\aspiradoras\agent.h
+	<string>
+	"environment.h"
+
+1335798835 c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\aspiradoras\aspiradoras\environment.h
+	<fstream>
+
+1335798849 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\aspiradoras\aspiradoras\environment.cpp
+	<iostream>
+	<iomanip>
+	<string>
+	"stdlib.h"
+	"environment.h"
+	"include/GL/glui.h"
+
+1208858522 c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\aspiradoras\aspiradoras\include\gl\glui.h
+	"openglut.h"
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	<string>
+	<vector>
+
+1207922190 c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\aspiradoras\aspiradoras\include\gl\openglut.h
+	"openglut_std.h"
+	"openglut_ext.h"
+
+1208460342 c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\aspiradoras\aspiradoras\include\gl\openglut_std.h
+	<windows.h>
+	"gl.h"
+	"glu.h"
+
+1107063320 c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\aspiradoras\aspiradoras\include\gl\gl.h
+
+1208460414 c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\aspiradoras\aspiradoras\include\gl\glu.h
+	<stddef.h>
+	"gl.h"
+
+1207922190 c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\aspiradoras\aspiradoras\include\gl\openglut_ext.h
+
+1152200576 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\aspiradoras\aspiradoras\include\glui.cpp
+	"glui_internal_control.h"
+
+1152201212 c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\aspiradoras\aspiradoras\include\glui_internal_control.h
+	"GL/glui.h"
+	"glui_internal.h"
+
+1120528640 c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\aspiradoras\aspiradoras\include\glui_internal.h
+	<cstdio>
+	<cmath>
+
+1152200576 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\aspiradoras\aspiradoras\include\glui_bitmap_img_data.cpp
+
+1152200576 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\aspiradoras\aspiradoras\include\glui_bitmaps.cpp
+	"GL/glui.h"
+	"glui_internal.h"
+	<cassert>
+
+1152200576 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\aspiradoras\aspiradoras\include\glui_button.cpp
+	"glui_internal_control.h"
+
+1152200576 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\aspiradoras\aspiradoras\include\glui_column.cpp
+	"glui_internal_control.h"
+
+1152200576 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\aspiradoras\aspiradoras\include\glui_control.cpp
+	"glui_internal_control.h"
+
+1152200576 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\aspiradoras\aspiradoras\include\glui_edittext.cpp
+	"glui_internal_control.h"
+	<cassert>
+
+1240413832 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\aspiradoras\aspiradoras\include\glui_filebrowser.cpp
+	"GL/glui.h"
+	"glui_internal.h"
+	<sys/types.h>
+	<dirent.h>
+	<unistd.h>
+	<windows.h>
+	<sys/stat.h>
+	<iostream>
+
+1152200576 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\aspiradoras\aspiradoras\include\glui_list.cpp
+	"glui_internal_control.h"
+	<cmath>
+	<sys/timeb.h>
+
+1120535008 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\aspiradoras\aspiradoras\include\glui_node.cpp
+	"GL/glui.h"
+	"glui_internal.h"
+
+1208456570 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\aspiradoras\aspiradoras\include\glui_panel.cpp
+	"glui_internal_control.h"
+
+1152200576 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\aspiradoras\aspiradoras\include\glui_radio.cpp
+	"glui_internal_control.h"
+	<cassert>
+
+1152200576 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\aspiradoras\aspiradoras\include\glui_rollout.cpp
+	"glui_internal_control.h"
+
+1152200576 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\aspiradoras\aspiradoras\include\glui_scrollbar.cpp
+	"glui_internal_control.h"
+	<cmath>
+	<cassert>
+
+1152200576 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\aspiradoras\aspiradoras\include\glui_spinner.cpp
+	"glui_internal_control.h"
+	<cmath>
+	<cassert>
+
+1152200576 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\aspiradoras\aspiradoras\include\glui_statictext.cpp
+	"glui_internal_control.h"
+
+1120535008 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\aspiradoras\aspiradoras\include\glui_string.cpp
+	"GL/glui.h"
+	<stdarg.h>
+
+1120535008 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\aspiradoras\aspiradoras\include\glui_window.cpp
+	"GL/glui.h"
+	"glui_internal.h"
+
+1236164460 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\aspiradoras\aspiradoras\main.cpp
+	"GUI.h"
+
+1335802398 c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\aspiradoras\aspiradoras\gui.h
+	<fstream>
+	"include/GL/glui.h"
+
+1335810634 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\aspiradoras\aspiradoras\player.cpp
+	<iostream>
+	<cstdlib>
+	"player.h"
+	"environment.h"
+
+1335338964 c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\aspiradoras\aspiradoras\player.h
+	"environment.h"
+
+1335809857 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\aspiradoras\aspiradoras\gui.cpp
+	<fstream>
+	<sstream>
+	<iomanip>
+	<iostream>
+	<windows.h>
+	"GUI.h"
+	<stdlib.h>
+	"environment.h"
+	"agent.h"
+	"player.h"
+
+1336739320 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\practica3_alumnos\gui.cpp
+	<fstream>
+	<sstream>
+	<iomanip>
+	<iostream>
+	<windows.h>
+	"GUI.h"
+	<stdlib.h>
+	"environment.h"
+	"player.h"
+
+1336738540 c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\practica3_alumnos\gui.h
+	<fstream>
+	"include/GL/glui.h"
+
+1208858522 c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\practica3_alumnos\include\gl\glui.h
+	"openglut.h"
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	<string>
+	<vector>
+
+1207922190 c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\practica3_alumnos\include\gl\openglut.h
+	"openglut_std.h"
+	"openglut_ext.h"
+
+1208460342 c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\practica3_alumnos\include\gl\openglut_std.h
+	<windows.h>
+	"gl.h"
+	"glu.h"
+
+1107063320 c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\practica3_alumnos\include\gl\gl.h
+
+1208460414 c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\practica3_alumnos\include\gl\glu.h
+	<stddef.h>
+	"gl.h"
+
+1207922190 c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\practica3_alumnos\include\gl\openglut_ext.h
+
+1337797280 c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\practica3_alumnos\environment.h
+	<fstream>
+
+1335338964 c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\practica3_alumnos\player.h
+	"environment.h"
+
+1337797235 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\practica3_alumnos\environment.cpp
+	<iostream>
+	<iomanip>
+	<string>
+	"stdlib.h"
+	"environment.h"
+	"include/GL/glui.h"
+
+1152200576 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\practica3_alumnos\include\glui.cpp
+	"glui_internal_control.h"
+
+1152201212 c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\practica3_alumnos\include\glui_internal_control.h
+	"GL/glui.h"
+	"glui_internal.h"
+
+1120528640 c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\practica3_alumnos\include\glui_internal.h
+	<cstdio>
+	<cmath>
+
+1152200576 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\practica3_alumnos\include\glui_bitmap_img_data.cpp
+
+1152200576 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\practica3_alumnos\include\glui_bitmaps.cpp
+	"GL/glui.h"
+	"glui_internal.h"
+	<cassert>
+
+1152200576 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\practica3_alumnos\include\glui_button.cpp
+	"glui_internal_control.h"
+
+1152200576 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\practica3_alumnos\include\glui_column.cpp
+	"glui_internal_control.h"
+
+1152200576 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\practica3_alumnos\include\glui_control.cpp
+	"glui_internal_control.h"
+
+1152200576 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\practica3_alumnos\include\glui_edittext.cpp
+	"glui_internal_control.h"
+	<cassert>
+
+1240413832 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\practica3_alumnos\include\glui_filebrowser.cpp
+	"GL/glui.h"
+	"glui_internal.h"
+	<sys/types.h>
+	<dirent.h>
+	<unistd.h>
+	<windows.h>
+	<sys/stat.h>
+	<iostream>
+
+1152200576 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\practica3_alumnos\include\glui_list.cpp
+	"glui_internal_control.h"
+	<cmath>
+	<sys/timeb.h>
+
+1120535008 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\practica3_alumnos\include\glui_node.cpp
+	"GL/glui.h"
+	"glui_internal.h"
+
+1208456570 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\practica3_alumnos\include\glui_panel.cpp
+	"glui_internal_control.h"
+
+1152200576 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\practica3_alumnos\include\glui_radio.cpp
+	"glui_internal_control.h"
+	<cassert>
+
+1152200576 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\practica3_alumnos\include\glui_rollout.cpp
+	"glui_internal_control.h"
+
+1152200576 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\practica3_alumnos\include\glui_scrollbar.cpp
+	"glui_internal_control.h"
+	<cmath>
+	<cassert>
+
+1152200576 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\practica3_alumnos\include\glui_spinner.cpp
+	"glui_internal_control.h"
+	<cmath>
+	<cassert>
+
+1152200576 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\practica3_alumnos\include\glui_statictext.cpp
+	"glui_internal_control.h"
+
+1120535008 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\practica3_alumnos\include\glui_string.cpp
+	"GL/glui.h"
+	<stdarg.h>
+
+1120535008 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\practica3_alumnos\include\glui_window.cpp
+	"GL/glui.h"
+	"glui_internal.h"
+
+1236164460 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\practica3_alumnos\main.cpp
+	"GUI.h"
+
+1336739092 source:c:\documents and settings\a\mis documentos\docencia\grado_ia\curso2011_12\practica3\preparacion\practica3_alumnos\player.cpp
+	<iostream>
+	<cstdlib>
+	"player.h"
+	"environment.h"
+

@@ -1,0 +1,365 @@
+#include "agent.h"
+#include "environment.h"
+#include "state.h"
+#include <cstdlib>
+#include <iostream>
+#include <list>
+#include <queue>
+#include <stack>
+#include <cmath>
+
+using namespace std;
+
+
+// -----------------------------------------------------------
+Environment::ActionType Agent::AgenteReactivo()
+{
+int muevete;
+
+    if(dirty_){
+        muevete=3;
+
+    }else{
+        muevete=rand()%3;
+
+     }
+    cout << "accion -------->" << muevete<< endl;
+    return static_cast<Environment::ActionType> (muevete);
+
+}
+
+
+
+
+
+// -----------------------------------------------------------
+// Inserta un estado (st) en una lista de estados (lista) y devuelve un iterador a su posición en la lista (it)
+// La función devuelve "true" e inserta el estado (st) al final de la lista si es estado no estaba ya en la lista.
+// La función devuelve "false" si el estado (st) ya estaba en la lista, y NO LO INSERTA EN LA LISTA
+// -----------------------------------------------------------
+bool InsertarLista(list <state> &lista, const state &st, list<state>::iterator &it){
+  char ch;
+  it= lista.begin();
+  bool salida=false;
+  while (it!=lista.end() and !(*it==st) )
+    it++;
+  if (it==lista.end()){
+    lista.push_back(st);
+    it = lista.end();
+    it--;
+    salida=true;
+  }
+  return salida;
+}
+
+
+
+
+
+
+// -----------------------------------------------------------
+// Busqueda en Profundidad
+// -----------------------------------------------------------
+
+Plan Agent::Busqueda_Profundidad(state start){
+ Plan plan;
+  typedef list<state>::iterator elemento_pila;
+
+  int last_level=0; // Indica el nivel del grafo por donde va la búsqueda
+  int estados_evaluados = 0; // Indica el número de nodos evaluados
+  state aux = start; // start es el estado inicial
+  state sigActions[4], mejor_solucion; // para almacenar las siguientes acciones y la mejor solución
+  int n_act;
+
+  list<state> lista;               // Lista que almacenara todos los estados
+  list<state>::iterator p, padre;  // Declara dos iteradores a la lista
+  stack <elemento_pila> pila; //Declaración de la pila
+
+  elemento_pila siguiente; // Declara una variable del tipo almacenado en la pila
+
+  InsertarLista(lista,aux,padre); // Inserta el estado inicial en la lista y (padre) es un iterador a su posición.
+
+  while (!aux.Is_Solution()){
+      // Indica si ha incrementado el nivel del grafo por donde está buscando
+      if (aux.Number_of_actions()!=last_level){
+        cout << "Level " << aux.Number_of_actions() << " Suciedad Pendiente: " << aux.Get_Pending_Dirty() <<endl;
+        last_level = aux.Number_of_actions();
+      }
+
+      n_act=aux.Generate_New_States(sigActions); // Genera los nuevos estados a partir del estado (aux)
+
+      // Para cada estado generado, pone un enlace al estado que lo genero,
+      // lo inserta en la lista, y si no estaba ya en dicha lista, lo incluye en la pila.
+      for (int i=n_act-1; i>=0; i--){
+          sigActions[i].Put_Padre(padre);
+          if (InsertarLista(lista, sigActions[i], p) ){
+            pila.push( p );
+         }
+      }
+
+
+      // Saca el siguiente estado de la pila.
+      padre = pila.top();
+      aux = *padre;
+      pila.pop();
+      estados_evaluados++; // Incremento del número de estados evaluados
+  }
+
+  // Llegados aquí ha encontrado un estado solución, e
+  // incluye la solución en una variable de tipo plan.
+  plan.AnadirPlan(aux.Copy_Road(), lista.size(), estados_evaluados );
+
+  return plan; // Devuelve el plan
+}
+
+
+
+
+
+// -----------------------------------------------------------
+// Busqueda en Anchura
+// -----------------------------------------------------------
+Plan Agent::Busqueda_Anchura(state start){
+  Plan plan;
+  state actual = start;
+  int estados_expandidos=0, estados_evaluados=0;
+    // IMPLEMENTA AQUÍ EL MÉTODO DE BUSQUEDA EN ANCHURAt
+    int last_level,n_act;
+    typedef list<state>::iterator elemento_cola;
+    list<state> lista;
+    list<state>::iterator p,q;
+    queue<elemento_cola> cola;
+    state sigActions[4];
+    elemento_cola sig;
+    InsertarLista(lista, actual,q);
+    while(!actual.Is_Solution()){
+        n_act=actual.Generate_New_States(sigActions);//generamos una accion dentro de las posibles
+        for(int i=0;i<n_act;i++){
+            sigActions[i].Put_Padre(q);//asignamos a sigAntions[i] como padre a q
+            if(InsertarLista(lista,sigActions[i],p)){ // comprobamos si inserta el estado inicial en la lista y (p) es un iterador a su posición.
+
+               cola.push(p);// ponemos p en la cola
+               }
+    }
+        q=cola.front();//actualisamos el frente de la cola
+        actual=*q;//ponemos en actual un putero a q
+        cola.pop();//sacamos el elemento correspondiente de la cola
+        estados_evaluados++;
+        estados_expandidos+=n_act;
+    }
+  plan.AnadirPlan(actual.Copy_Road(), estados_expandidos, estados_evaluados );
+
+  return plan; // Devuelve el plan
+}
+
+
+
+//funcion para comparar
+
+typedef list<state>::iterator elemento_cola;
+
+class comparador{
+public:
+    bool operator()(elemento_cola a, elemento_cola b ){
+    return a->Get_g() > b->Get_g();
+    }
+
+};
+// -----------------------------------------------------------
+// Busqueda en Costo Uniforme
+// -----------------------------------------------------------
+
+Plan Agent::Busqueda_CosteUniforme(state start){
+  Plan plan;
+  state actual = start;
+  int estados_expandidos=0, estados_evaluados=0;
+
+  // IMPLEMENTA AQUÍ EL MÉTODO DE COSTO UNIFORME
+    state sigActions[4];
+    int last_level=0,n_act=0;
+    list<state> lista;
+    list<state>::iterator p ,q;
+    priority_queue<elemento_cola,vector<elemento_cola>, comparador> cola;//cola con prioridad
+    //elemento_cola sig;
+    InsertarLista(lista,actual,q);
+
+    while(!actual.Is_Solution()){
+        n_act=actual.Generate_New_States(sigActions);
+        for(int i=0;i<n_act;i++){
+            sigActions[i].Put_Padre(q);
+            if(InsertarLista(lista,sigActions[i],p)){
+               cola.push(p);
+               }
+    }
+        q=cola.top();
+        actual=*q;
+        cola.pop();
+        estados_evaluados++;
+        estados_expandidos+=n_act;
+    }
+
+  plan.AnadirPlan(actual.Copy_Road(), estados_expandidos, estados_evaluados );
+
+  return plan; // Devuelve el plan
+}
+
+
+
+// -----------------------------------------------------------
+// --------------------- Busqueda Heuristica -----------------
+// -----------------------------------------------------------
+
+
+/* Antes implemento una funcion que forma parte de state y
+busca la suciedad mas cercana este codigo esta extraido de una
+páctica de hace uno años*/
+
+
+double state::Suciedad_mas_cercana(int direccion)const{
+    double distancia;
+    double menor_distancia = 10000;
+    int posicionX = posX;
+    int posicionY = posY;
+
+
+    if (direccion == 4 || direccion == 5)
+        return 0;
+
+    for(int i=0; i < Tam_X; i++){
+        for(int a = 0; a < Tam_Y; a++){
+            if(mundo[i][a] > 0){
+                distancia = sqrt((i - posicionX)*(i-posicionX) + (a - posicionY)*(a-posicionY));
+                if(distancia < 0)
+                    distancia *= -1;
+                if(distancia < menor_distancia)
+                    menor_distancia = distancia;
+            }
+
+        }
+    }
+
+    return menor_distancia*3;
+}
+//----------------------------------------------------
+double Heuristica(const state &estado, int direccion){
+
+    double heuristic;
+    double g = estado.Suciedad_mas_cercana(direccion);
+    int h = estado.Get_h();
+
+
+    heuristic = h + g;
+    /*cout << heuristic << endl;
+    cout << "g -------->" << g << endl;
+    cout << "h -------->" << h << endl;
+    cout << endl << endl;*/
+    return heuristic;
+
+}
+
+// -----------------------------------------------------------
+
+Plan Agent::Escalada(state start){
+  Plan plan;
+  state aux = start;
+  int last_level = 0;
+  int n_act;
+  double mejor;
+  state sigActions[4], mejor_solucion;
+  int estados_expandidos=0, estados_evaluados=0;
+  //  cout << "Pensando..." << endl;
+
+ while (!aux.Is_Solution()){
+      // Indica si ha incrementado el nivel del grafo por donde está buscando
+      if (aux.Get_g()!=last_level){
+        //cout << "Level " << aux.Get_g() << endl;
+        last_level = aux.Get_g();
+      }
+//system("pause");
+      estados_evaluados++; // Incremento del número de estados evaluados
+
+      n_act=aux.Generate_New_States(sigActions); // Genera los nuevos estados a partir del estado (aux)
+
+
+    mejor = Heuristica(sigActions[0], 0);
+    mejor_solucion = sigActions[0];
+
+    for (int i=1; i<n_act; i++){
+      //  cout << "si";
+        if (mejor > Heuristica(sigActions[i], i)) {
+           // cout << "   cambia -------->  ";
+            mejor = Heuristica(sigActions[i], i);
+            mejor_solucion = sigActions[i];
+        }
+    }
+   // cout << "last->" << mejor_solucion.Last_Action() << endl;
+   aux = mejor_solucion;
+
+ }
+
+  plan.AnadirPlan(aux.Copy_Road(), estados_expandidos, estados_evaluados );
+
+  return plan;
+}
+
+
+// -----------------------------------------------------------
+Plan Agent::Think(const Environment &env, int option){
+  state start(env);
+  Plan plan;
+
+
+  switch (option){
+      case 0: //Agente Reactivo
+
+              break;
+      case 1: //Busqueda Profundidad
+              plan = Busqueda_Profundidad(start);
+              cout << "\n Longitud del Plan: " << plan.Get_Longitud_Plan() << endl;
+              plan.Pinta_Plan();
+              break;
+      case 2: //Busqueda Anchura
+              plan = Busqueda_Anchura(start);
+              cout << "\n Longitud del Plan: " << plan.Get_Longitud_Plan() << endl;
+              plan.Pinta_Plan();
+              break;
+      case 3: //Busqueda Coste Uniforme
+              plan = Busqueda_CosteUniforme(start);
+              cout << "\n Longitud del Plan: " << plan.Get_Longitud_Plan() << endl;
+              plan.Pinta_Plan();
+              break;
+      case 4: //Busqueda Profundidad
+              plan = Escalada(start);
+              cout << "\n Longitud del Plan: " << plan.Get_Longitud_Plan() << endl;
+              plan.Pinta_Plan();
+              break;
+
+  }
+
+  return plan;
+}
+
+
+
+
+
+
+// -----------------------------------------------------------
+void Agent::Perceive(const Environment &env)
+{
+	bump_ = env.isJustBump();
+	dirty_ = env.isCurrentPosDirty();
+}
+// -----------------------------------------------------------
+string ActionStr(Environment::ActionType action)
+{
+	switch (action)
+	{
+	case Environment::actFORWARD: return "FORWARD";
+	case Environment::actTURN_L: return "TURN_LEF";
+	case Environment::actTURN_R: return "TURN_RIGHT";
+	case Environment::actSUCK: return "SUCK";
+	case Environment::actIDLE: return "IDLE";
+	default: return "???";
+	}
+}
